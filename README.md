@@ -1,9 +1,9 @@
-En Construcción ...
+
 
 poker-kata
 ================
 http://www.solveet.com/exercises/Poker-Kata/193
-
+http://en.wikipedia.org/wiki/Poker
 
 ToDo
 =======

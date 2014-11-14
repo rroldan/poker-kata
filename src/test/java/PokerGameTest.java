@@ -21,9 +21,16 @@ public class PokerGameTest {
 
     @Test
     public void testNingunaGanadora(){
-        String cartas = "2,♠:3,♥:4,♦:5:♣";
+        String cartas = "2,♠:3,♥:4,♦:5,♣";
         String combiancionGanadora = pokerGame.play(cartas);
         Assert.assertEquals("Esperaba una combinación no ganadora",null,combiancionGanadora);
+    }
+
+    @Test
+    public void testOnePair() {
+        String cartas = "2,♠:2,♥:4,♦:5,♣";
+        String combiancionGanadora = pokerGame.play(cartas);
+        Assert.assertEquals("Esperaba una combinación ganadora del tipo Pareja","ONE PAIR",combiancionGanadora);
     }
 
 }
